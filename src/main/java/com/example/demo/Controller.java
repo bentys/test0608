@@ -13,7 +13,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static android.R.attr.name;
+/***
+ *
+ * 这是一个SpringBOOT的应用用于主要的操作。
+ * */
 
 @RestController
 
