@@ -20,10 +20,10 @@ import static android.R.attr.publicKey;
 
 public class Controller {
 
-	int x=1;
-	int y=1;
-	int z=0;
-	int p=0;
+	private int x=1;
+    private int y=1;
+    private int z=0;
+    private int p=0;
 	@RequestMapping(value = "users",method = RequestMethod.GET)
 	public @ResponseBody Object users(){
 		List<String> userList=new ArrayList<>();
@@ -46,6 +46,7 @@ public class Controller {
 
 			Map<String,Object> map=new HashMap<>();
 
+
 			if ("123".equals(pwd)&&"jack".equals(name)){
 				map.put("status",0);
 			}else{
@@ -59,11 +60,12 @@ public class Controller {
 		}
 
 
-	@RequestMapping(value = "admin",method = RequestMethod.GET)
-	public @ResponseBody String Say(){
+	@RequestMapping(value = "name",method = RequestMethod.GET)
+	public @ResponseBody String Say(String name,String age){
+
 		z++;
 		System.out.println("get——admin....."+z);
-		return "This is get,is admin Pages"+z+"次!!!";
+		return "This is get,is "+name+" ++"+age+"!!"+z+"次!!!";
 	}
 
 
