@@ -11,6 +11,6 @@ public class RegexDemo03 {
             String newString =m.replaceAll("-");
 
             System.out.println(newString);
-
+            System.out.println(newString);
         }
 }
