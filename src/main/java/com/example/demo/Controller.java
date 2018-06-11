@@ -21,7 +21,7 @@ import java.util.Map;
 @RestController
 
 public class Controller {
-
+	int x,y,z;
 
 	@RequestMapping(value = "users",method = RequestMethod.GET)
 	public @ResponseBody Object users(){
@@ -49,6 +49,25 @@ public class Controller {
 			return map;
 
 		}
+
+
+		@RequestMapping(value ="admin", method = RequestMethod.GET)
+		public @ResponseBody Object t1 (){
+			z++;
+			this.z=z;
+		String	z1= String.valueOf(z)+"次数请求";
+			List<String> userList=new ArrayList<>();
+			userList.add("tom");
+			userList.add("marry");
+			userList.add("jack");
+			userList.add(z1);
+			return userList;
+
+
+
+
+		}
+
 
 	}
 
