@@ -109,13 +109,14 @@
 			<version>6.0.6</version>
 		</dependency>
 
+		<!--完成相应的maven的搭建-->
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+
+
+
+
 
 	</dependencies>
-
-
-
-
-
 	<build>
 		<plugins>
 			<plugin>

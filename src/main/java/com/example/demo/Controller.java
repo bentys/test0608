@@ -3,10 +3,7 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.*;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,6 +64,27 @@ public class Controller {
 
 
 		}
+
+	@RequestMapping(value ="/login2", method = RequestMethod.POST)
+
+	public @ResponseBody Object login2(@RequestBody String name1, String pwd1){
+
+		String[] xinxi=new String[2];
+		xinxi[0]=name1;
+		xinxi[1]=pwd1;
+
+		Map<String ,Object> s1=new HashMap<>();
+		s1.put("11",name1);
+		s1.put("22",pwd1);
+		s1.put("xaa","xxx");
+		s1.put("x",xinxi[2]);
+
+		Object g1=s1.get("xaa");
+
+
+		//return g1;
+		return s1;
+	}
 
 
 	}
