@@ -16,7 +16,7 @@ public class runtimeDemo02 {
         }catch (Exception e){
             e.printStackTrace();
         }
-        pro.destroyForcibly();
+      //  pro.destroyForcibly();
 
     }
 }

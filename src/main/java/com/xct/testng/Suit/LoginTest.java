@@ -1,6 +1,7 @@
 package com.xct.testng.Suit;
 
 import com.xct.testng.Basictest01;
+
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -50,12 +51,24 @@ public class LoginTest {
 // 参数的顺序是 actualValue（实际值）, expectedValue（期望值） [, message（信息）].
         int m=mun*mun;
         System.out.println("查看下计算值之后断言情况:"+m);
-    Assert.assertEquals( m, 9, "输入错误");
+    org.testng.Assert.assertEquals( m, 9, "输入错误");
     }
+@Test
+    public void s3(){
+
+    Assert.assertEquals("xx","xx");
 
 
 }
 
+    @Test(invocationCount = 10)
+    public void repeatThis() {
+
+        System.out.println("repeatThis " );
+    }
+}
+
  class ClassCase02{
+
 
 }
