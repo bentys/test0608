@@ -35,8 +35,8 @@ public class ListDome01 {
 
         }
 
-       sop(arr1.contains(arr2));
-       sop(arr1.isEmpty());
+        sop(arr1.contains(arr2));
+        sop(arr1.isEmpty());
         sop(arr1.indexOf("1"));
         sop(arr1.indexOf("oko6"));
         sop(arr1.remove("oko1"));

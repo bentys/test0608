@@ -15,10 +15,11 @@ public class StringBuffer01 {
         sop(sb.toString());
         sb1.delete(1,2);
         sb1.insert(1,"333");
-        sb1.insert(8,"333");
+        sb1.insert(8,"444");
         sb1.reverse();
         sop(sb1.toString());
         sop(sb1.equals(sb));
+        sop(sb1.indexOf("a"));
 
 
     }
@@ -27,5 +28,10 @@ public class StringBuffer01 {
     public static void sop(Object str){
 
         System.out.println(str);
+    }
+
+    public static void method_del(Object st1){
+
+
     }
 }

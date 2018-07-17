@@ -41,7 +41,12 @@ public class ListDome02 {
 
         for (int x=0;x<a1.size();x++){//遍历所有的数据集合
 
-            speek(a1.get(x));
+            speek("a1的数字"+x+"===>>>"+a1.get(x));
         }
+
+
+
+
+        
     }
 }

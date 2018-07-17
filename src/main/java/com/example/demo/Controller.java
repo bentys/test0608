@@ -1,20 +1,12 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.*;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import eg.Students;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static android.R.attr.name;
-import static android.R.attr.publicKey;
 
 @RestController
 
@@ -76,7 +68,56 @@ public class Controller {
 		return style +p+"次!!!";
 	}
 
+
+	@RequestMapping(value ="login2", method = RequestMethod.POST)
+
+	public @ResponseBody Object login2(@RequestParam  String name, String pwd){
+
+		Map<String,Object> map=new HashMap<>();
+
+
+		if ("123".equals(pwd)&&"jack".equals(name)){
+			map.put("status","正确name:"+name+"pwd:"+pwd);
+		}else{
+
+			map.put("status","失败name:"+name+"pwd:"+pwd);
+		}
+		System.out.println("put....."+y);
+		y++;
+		return map;
+
 	}
+
+
+
+	@RequestMapping(value ="/pathjson", method = RequestMethod.POST)
+//修改想要的注释内容,需要传递什么的json格式内容,通过json格式内容最终,通过json返回。
+		public @ResponseBody
+	Object pathjson(@RequestBody Students s){ //其中"s" 表示行参,其中?可以接受相应的实体。。
+
+			Students s1=new Students();
+
+			s1.userAge=s.userAge;
+		    s1.userName=s.userName;
+
+
+			Map<Integer,String> map1=new HashMap<>();
+			map1.put(s1.getUserAge(),s1.getUserName());
+			map1.put(y,s1.getUserName()+y);
+
+			y++;
+			return map1;
+
+
+
+
+
+
+
+	}
+
+
+}
 
 
 
