@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestAll">
+
+        <test name="case01">
+            <parameter name="x" value="1" />
+            <parameter name="y" value="10" />
+            <parameter name="mun" value="3" />
+            <classes>
+                <class name="com.xct.testng.Suit.SuiteConfig"></class>
+                <class name="com.xct.testng.Suit.LoginTest"></class>
+
+
+
+                <!--<class name="com.xct.testng.Suit.LoginTest"></class>-->
+            </classes>
+        </test>
+
+
+
+            <test name="case02">
+                <classes>
+
+                    <!--<class name="com.xct.testng.Suit.TestDBConnection"></class>-->
+
+                    <class name="com.xct.testng.Suit.Paytest"></class>
+                    <!--<class name="com.xct.testng.Suit.LoginTest"></class>-->
+                </classes>
+            </test>
+
+</suite>
+
