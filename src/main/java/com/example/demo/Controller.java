@@ -64,7 +64,7 @@ public class Controller {
 
 
 
-	@RequestMapping(value = "admin",method = RequestMethod.GET)
+	@RequestMapping(value = "admin2",method = RequestMethod.GET)
 	public @ResponseBody String Say(){
 		z++;
 		System.out.println("get——admin....."+z);
