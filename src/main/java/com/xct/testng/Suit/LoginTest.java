@@ -61,7 +61,7 @@ public class LoginTest {
 
 }
 
-    @Test(invocationCount = 10)
+    @Test(invocationCount = 3)
     public void repeatThis() {
 
         System.out.println("repeatThis " );

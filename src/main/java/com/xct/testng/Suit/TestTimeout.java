@@ -8,7 +8,7 @@ public class TestTimeout {
     @Test(timeOut = 5000) // time in mulliseconds
     public void testThisShouldPass() throws InterruptedException {
 //        new Basictest01().say("op");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         //lp
     }
 

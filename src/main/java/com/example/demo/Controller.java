@@ -11,8 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import static android.R.attr.name;
-import static android.R.attr.publicKey;
+
 
 /***
  *
