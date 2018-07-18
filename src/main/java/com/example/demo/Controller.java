@@ -108,7 +108,7 @@ public class Controller {
 		Map<String ,Object> s1=new HashMap<>();
 		s1.put("11",name1);
 		s1.put("22",pwd1);
-		s1.put("xaa","xxx");
+		s1.put("x00aa","xxx");
 		s1.put("x",xinxi[2]);
 
 		Object g1=s1.get("xaa");
