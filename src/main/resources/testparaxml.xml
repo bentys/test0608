@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="t4est">
+    <test name="test02">
+        <parameter name="name" value="xiaomg"/>
+        <parameter name="age" value="11"/>
+        <parameter name="mun" value="3" />
+
+        <classes>
+
+
+
+                <class name="com.xct.testng.testxml.paterxmltest"></class>
+
+        </classes>
+
+
+    </test>
+
+
+
+
+</suite>

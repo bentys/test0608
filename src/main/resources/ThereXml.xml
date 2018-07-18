@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="testxml" parallel="tests" thread-count="2"> <!--parallel标识根据那种级别继续线程分组，thread-count对应的最大并发执行线程数量-->
+    <!--<suite name="testxml" parallel="methods" thread-count="2">-->
+    <!--<suite name="testxml" parallel="tests" thread-count="2">-->
+
+    <test name="test0">
+        <classes>
+            <class name="com.xct.testng.testxml.Threexml"></class>
+            <class name="com.xct.testng.testxml.Threexml02"></class>
+            <class name="com.xct.testng.testxml.Threexml03"></class>
+            <class name="com.xct.testng.testxml.Threexml04"></class>
+
+
+        </classes>
+
+    </test>
+
+    <test name="test01">
+        <classes>
+
+            <class name="com.xct.testng.testxml.Threexml05"></class>
+            <class name="com.xct.testng.testxml.Threexml06"></class>
+            <class name="com.xct.testng.testxml.Threexml07"></class>
+
+        </classes>
+
+    </test>
+
+
+</suite>
