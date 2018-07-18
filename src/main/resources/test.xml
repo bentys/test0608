@@ -1,30 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestAll">
+<suite name="TestAll" parallel="classes" thread-count="2"> <!--确定相应的线程数量-->
+    <parameter name="x" value="99999999" /><!--用于获得相应的内容，参数化-->
+    <parameter name="y" value="9999" /><!--用于获得相应的内容，参数化-->
+    <parameter name="mun" value="9999999" /> <!--用于获得相应的内容，参数化-->
+
+
+
 
         <test name="case01">
-            <parameter name="x" value="1" />
+            <parameter name="x" value="1999" />
             <parameter name="y" value="10" />
             <parameter name="mun" value="3" />
+
+            <groups>
+                <run>
+                    <exclude name="test1" />
+                    <include name="test2" />
+                </run>
+            </groups>
+
+
+
             <classes>
-                <class name="com.xct.testng.Suit.SuiteConfig"></class>
                 <class name="com.xct.testng.Suit.LoginTest"></class>
 
 
 
-                <!--<class name="com.xct.testng.Suit.LoginTest"></class>-->
+
+
+                <!--<class name="com.xct.testng.Suit.SuiteConfig"></class>-->
             </classes>
+
         </test>
-
-
-
             <test name="case02">
                 <classes>
 
                     <!--<class name="com.xct.testng.Suit.TestDBConnection"></class>-->
 
-                    <class name="com.xct.testng.Suit.Paytest"></class>
+                    <!--<class name="com.xct.testng.Suit.Paytest"></class>-->
+
+                    <!--<class name="com.xct.testng.Suit.SuiteConfig"></class>-->
+
                     <!--<class name="com.xct.testng.Suit.LoginTest"></class>-->
                 </classes>
             </test>

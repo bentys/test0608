@@ -8,7 +8,7 @@ public class Paytest {
     public void CaseTest04(){
         new Basictest01().say("'开始支付测试用例04");
     }
-    @Test
+
     public void CaseTest03(){
         new Basictest01().say("'支付成功测试用例03");
     }
