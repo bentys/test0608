@@ -3,7 +3,7 @@ package com.xct.testng.testxml;
 import com.xct.testng.Basictest01;
 import org.testng.annotations.Test;
 
-public class Threexml09 {
+public class Threexml10 {
     //多线程测试
     @Test
     public  void  ThereRun01(){
