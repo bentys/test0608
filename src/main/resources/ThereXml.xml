@@ -3,7 +3,7 @@
 
 
 
-<suite name="testxml" parallel="tests" thread-count="2"> <!--parallel标识根据那种级别继续线程分组，thread-count对应的最大并发执行线程数量-->
+<suite name="testxml" parallel="classes" thread-count="2"> <!--parallel标识根据那种级别继续线程分组，thread-count对应的最大并发执行线程数量-->
     <!--<suite name="testxml" parallel="methods" thread-count="2">-->
     <!--<suite name="testxml" parallel="tests" thread-count="2">-->
 

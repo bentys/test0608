@@ -9,7 +9,6 @@ public class Threexml {
     public  void  ThereRun01(){
 
     new Basictest01().say("打印相应的线程ID:"+Thread.currentThread().getId()+"线程");
-
     }
     @Test
     public  void  ThereRun02(){
