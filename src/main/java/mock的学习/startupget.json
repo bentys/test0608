@@ -1,0 +1,18 @@
+[
+  {
+    "description":"这是我们的第一个mock例子,模拟一个没有参数的get请求",
+    "request":{
+      "uri":"/dome",
+      "method":"get" //用于表示一个一方法
+    },
+    "response":{
+      "text":"第一个mock框架DOME"
+
+    }
+
+
+  }
+
+
+
+]
