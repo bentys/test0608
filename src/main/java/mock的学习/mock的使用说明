@@ -18,6 +18,13 @@ java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startup1.json
 //这是一个用于测试GET,用于测试无参数方法
 java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startupGet.json
 
+访问地址:
+无参
+http://localhost:8899/getdome
+有参
+http://localhost:8899/getdomepattam?name=zhangsan&age=111
+
+
 
 //这是一个用于测试GET
 java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startupGet.json
