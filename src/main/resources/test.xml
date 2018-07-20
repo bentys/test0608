@@ -37,7 +37,7 @@
             <test name="case02">
                 <classes>
 
-                    <!--<class name="com.xct.testng.Suit.TestDBConnection"></class>-->
+                    <!--<class name="com.xct.testng.Suit.TestDBConnection"></class>111111111111111111111111-->
 
                     <!--<class name="com.xct.testng.Suit.Paytest"></class>-->
 
