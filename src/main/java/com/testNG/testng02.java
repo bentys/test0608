@@ -1,7 +1,9 @@
 package com.testNG;
 
-import org.junit.jupiter.api.Test;
+
 import org.testng.*;
+import org.testng.annotations.Test;
+
 public class testng02 {
     @Test()
     public void testEmailGenerator() {
