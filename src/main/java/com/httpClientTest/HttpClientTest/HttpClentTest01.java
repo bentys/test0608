@@ -1,4 +1,4 @@
-package HttpClientTest;
+package com.httpClientTest.HttpClientTest;
 
 /**
  * Created by xct15990138050 on 18/7/21.
@@ -6,19 +6,14 @@ package HttpClientTest;
  */
 
 import org.apache.http.HttpResponse;
-import org.apache.http.client.*;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-//import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EncodingUtils;
 import org.apache.http.util.EntityUtils;
-import org.jetbrains.annotations.TestOnly;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 
-import static java.nio.charset.Charset.defaultCharset;
+//import org.apache.http.impl.client.HttpClientBuilder;
 
 public class HttpClentTest01 {
     @Test
