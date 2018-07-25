@@ -1,4 +1,4 @@
-package com.testNG;
+package com.httpClientTest;
 
 
 import org.apache.http.HttpEntity;
@@ -16,15 +16,19 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
+import org.apache.http.util.EntityUtils;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 public class httpClientTwo {
+
     public  static void main(String[] args) throws Exception{
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet httpget = new HttpGet("http://localhost:8082/users");
         CloseableHttpResponse response = httpclient.execute(httpget);
+        String strResult = EntityUtils.toString(response.getEntity());
         try {
             HttpEntity entity = response.getEntity();
             System.out.println("Executing request " + httpget.getRequestLine());
@@ -35,6 +39,7 @@ public class httpClientTwo {
             System.out.println(response.getStatusLine().getStatusCode());
             System.out.println(response.getStatusLine().getReasonPhrase().toString().isEmpty());
             System.out.println(response.getStatusLine().toString());
+            System.out.println();
             if (entity != null) {
                 InputStream instream = entity.getContent();
                 try {
@@ -46,5 +51,12 @@ public class httpClientTwo {
         } finally {
             response.close();
         }
+
+
+    }
+    @Test
+    public String  s1(){
+
+        return "OK";
     }
 }
