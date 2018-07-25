@@ -1,0 +1,96 @@
+[
+  {
+    "description":"这是我们的第一个mock例子,模拟一个没有参数的post请求",
+    "request": {
+      "uri": "/postdome",
+      "method": "post"
+    },
+    "response":{
+      "text":"这是我们的第一个mock例子,模拟一个没有参数的post请求,是一个POST方法"
+    }
+  },
+  {
+    "description": "这是我们的第一个mock例子,模拟一个有参数的post请求",
+    "request": {
+      "uri": "/postdomepattam",
+      "method": "post",
+      "forms": {
+        "name": "zhangsan",
+        "age": "111"
+      }
+    },
+    "response": {
+      "text": "这是我们的第一个mock例子,模拟一个有参数的post请求,是一个POST方法"
+    }
+  },
+
+
+  {
+    "description": "这是我们的第一个mock例子,模拟一个josn格式请求的内容",
+    "request": {
+      "uri": "/postdomejson",
+      "method": "post",
+      "json": {
+        "name": "zhangsan",
+        "age": "111"
+      }
+    },
+    "response": {
+      "text": "模拟一个josn格式请求的内容,这是一个json格式返回结果"
+    }
+  },
+  {
+    "description": "这是我们的第一个mock例子,模拟一个请求与结果josn的内容",
+    "request": {
+      "uri": "/postdomejson2",
+      "method": "post",
+      "json": {
+        "name": "zhangsan",
+        "age": "111"
+      }
+    },
+    "response": {
+      "json":{
+        "name":"这是一个参数,是通过josn返回数据",
+        "age":"11111",
+        "age":"11111",
+        "age":"11111",
+        "age":"11111"
+
+      }
+    }
+  },
+
+  {
+    "description": "这是我们的第一个mock例子,模拟一个请求与结果josn的内容,需要校验响应的cookies数据",
+    "request": {
+      "uri": "/postdomejson3",
+      "method": "post",
+      "headers":{
+
+        "Content-Type":"application/json;charset=UTF-8"
+
+
+      },
+      "cookies":{
+        "xsid":"b2"
+
+      },
+      "json": {
+        "name": "zhangsan",
+        "age": "111"
+      }
+    },
+    "response": {
+      "json":{
+        "name":"这是一个参数,是通过josn返回数据",
+        "age":"11111",
+        "age":"11111",
+        "age":"11111",
+        "age":"11111"
+
+      }
+    }
+  }
+
+]

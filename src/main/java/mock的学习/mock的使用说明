@@ -1,0 +1,30 @@
+mock的包下载
+https://repo1.maven.org/maven2/com/github/dreamhead/moco-runner
+
+下载:"moco-runner-0.12.0-standalone.jar"
+
+1.由于是个一个jar的包，所以直接通过jar来启动
+2.java  －jar  ./moco-runner-0.12.0-standalone.jar http -p 8888 -c startup1.json
+
+3.json的文件编写，需要自己手动编写。。同时在启动时候需要指定响应的地址
+
+4.文件启动地址，与-c的地址可以相对地址，也可以决定地址的。
+
+
+例如:
+//这是一个例子的方法
+java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startup1.json
+
+//这是一个用于测试GET,用于测试无参数方法
+java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startupGet.json
+
+访问地址:
+无参
+http://localhost:8899/getdome
+有参
+http://localhost:8899/getdomepattam?name=zhangsan&age=111
+
+
+
+//这是一个用于测试GET
+java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startupGet.json

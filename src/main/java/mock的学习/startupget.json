@@ -1,0 +1,27 @@
+[
+  {
+    "description":"这是我们的第一个mock例子,模拟一个没有参数的get请求",
+    "request": {
+      "uri": "/getdome",
+      "method": "get"
+    },
+    "response":{
+      "text":"第一个mock框架DOME,有响应的GET方法请求操作!!!!"
+    }
+  },
+  {
+    "description": "这是我们的第一个mock例子,模拟一个有参数的get请求",
+    "request": {
+      "uri": "/getdomepattam",
+      "method": "get",
+      "queries": {
+        "name": "zhangsan",
+        "age": "111"
+      }
+    },
+    "response": {
+      "text": "我有护理"
+    }
+  }
+
+]

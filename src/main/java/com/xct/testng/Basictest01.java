@@ -1,6 +1,6 @@
 package com.xct.testng;
 
-import org.junit.platform.commons.annotation.Testable;
+
 import org.testng.annotations.*;
 
 public class Basictest01 {
