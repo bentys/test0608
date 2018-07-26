@@ -1,4 +1,4 @@
-package com.httpClientTest.HttpClientTest;
+package com.httpClientTest;
 
 /**
  * Created by xct15990138050 on 18/7/21.
